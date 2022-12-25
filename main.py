@@ -34,5 +34,5 @@ dispatcher.add_handler(MessageHandler(Filters.text, return_links))
 updater.start_webhook(listen="127.0.0.1",
                       port=int(os.environ.get('PORT', 5000)),
                       url_path=telegram_bot_token,
-                      webhook_url= "https://a5b4-186-185-24-181.ngrok.io/" + telegram_bot_token
+                      webhook_url= "" + telegram_bot_token
                       )    
